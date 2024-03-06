@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator | the Code School</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,37 +14,60 @@
             <input type="text" id="inputBox" value="0" placeholder="0" disabled>
         </div>
         <div class="row">
-            <button type="button" class="opr">C</button>
-            <button type="button" class="opr">DEL</button>
-            <button type="button" class="opr">%</button>
-            <button type="button" class="opr">/</button>
+            <button type="button" class="opr" onclick="playSound()">AC</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" class="opr" onclick="playSound()">DEL</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" class="opr" onclick="playSound()">%</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" class="opr" onclick="playSound()">/</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
         </div>
         <div class="row">
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button" class="opr">*</button>
+            <button type="button" onclick="playSound()">7</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">8</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">9</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()" class="opr">*</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+        </div>
+
+        <div class="row">
+            <button type="button" onclick="playSound()">4</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">5</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">6</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()" class="opr">+</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
         </div>
         <div class="row">
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button" class="opr">+</button>
+            <button type="button" onclick="playSound()">1</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">2</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">3</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()" class="opr">-</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
         </div>
         <div class="row">
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button" class="opr">-</button>
-        </div>
-        <div class="row">
-            <button type="button" id="plusMinus">&#xB1;</button>
-            <button type="button">0</button>
-            <button type="button">.</button>
-            <button type="button" id="eqBtn">=</button>
+            <button type="button" onclick="playSound()" id="plusMinus">&#xB1;</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">0</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()">.</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
+            <button type="button" onclick="playSound()" id="eqBtn">=</button>
+            <audio id="myAudio" src="sound/btn.mp3"></audio>
         </div>
 
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>

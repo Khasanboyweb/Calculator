@@ -1,4 +1,4 @@
-        let inputBox = document.getElementById('inputBox')
+let inputBox = document.getElementById('inputBox')
 let buttons = document.querySelectorAll('button')
 
 let string = ''
@@ -12,10 +12,10 @@ buttons.forEach(element =>{
          inputBox.value = string;
          }
          catch(error){
-            inputBox.value = "Error(Press C)"
+            inputBox.value = "Error(Press AC)"
          }
         }
-        else if(b.target.innerText == 'C'){
+        else if(b.target.innerText == 'AC'){
             string = ''
             inputBox.value = string;
         }
@@ -33,3 +33,7 @@ buttons.forEach(element =>{
         }
     })
 })
+function playSound() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+}
